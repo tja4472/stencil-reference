@@ -1,5 +1,5 @@
 {
-  "name": "@stencil/starter",
+  "name": "stencil-reference",
   "private": true,
   "version": "0.0.1",
   "description": "Stencil App Starter",
@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "@stencil/core": "0.7.7",
-    "@stencil/router": "latest"
+    "@stencil/router": "0.0.28"
   },
   "devDependencies": {
-    "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@stencil/dev-server": "0.0.18",
+    "@stencil/utils": "0.0.4",
+    "@types/jest": "21.1.1",
+    "jest": "21.2.1"
   },
   "repository": {
     "type": "git",
