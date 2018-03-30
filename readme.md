@@ -8,6 +8,7 @@ npm dedupe && npm prune && npm install
 # References
 
 * https://stenciljs.com/
+* https://github.com/ionic-team/stencil
 
 # Stencil App Starter
 
