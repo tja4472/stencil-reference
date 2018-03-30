@@ -1,3 +1,9 @@
+Cannot find module 'request' #5352
+https://github.com/facebook/jest/issues/5352
+```
+npm dedupe && npm prune && npm install 
+```
+
 # Stencil App Starter
 
 Stencil is a compiler for building fast web apps using Web Components.
