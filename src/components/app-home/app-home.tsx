@@ -22,6 +22,8 @@ export class AppHome {
             Profile page
           </button>
         </stencil-route-link>
+
+        <tjaex-main/>
       </div>
     );
   }

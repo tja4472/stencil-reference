@@ -109,4 +109,276 @@ declare global {
   }
 }
 
+
+declare global {
+  interface HTMLTjaexCommentElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexCommentElement: {
+    prototype: HTMLTjaexCommentElement;
+    new (): HTMLTjaexCommentElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-comment': HTMLTjaexCommentElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-comment': HTMLTjaexCommentElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-comment': JSXElements.TjaexCommentAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexCommentAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexConditionalIfElement extends HTMLStencilElement {
+    'name': string;
+  }
+  var HTMLTjaexConditionalIfElement: {
+    prototype: HTMLTjaexConditionalIfElement;
+    new (): HTMLTjaexConditionalIfElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-conditional-if': HTMLTjaexConditionalIfElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-conditional-if': HTMLTjaexConditionalIfElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-conditional-if': JSXElements.TjaexConditionalIfAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexConditionalIfAttributes extends HTMLAttributes {
+      'name'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexConditionalTernaryElement extends HTMLStencilElement {
+    'name': string;
+  }
+  var HTMLTjaexConditionalTernaryElement: {
+    prototype: HTMLTjaexConditionalTernaryElement;
+    new (): HTMLTjaexConditionalTernaryElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-conditional-ternary': HTMLTjaexConditionalTernaryElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-conditional-ternary': HTMLTjaexConditionalTernaryElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-conditional-ternary': JSXElements.TjaexConditionalTernaryAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexConditionalTernaryAttributes extends HTMLAttributes {
+      'name'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexDataBindingElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexDataBindingElement: {
+    prototype: HTMLTjaexDataBindingElement;
+    new (): HTMLTjaexDataBindingElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-data-binding': HTMLTjaexDataBindingElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-data-binding': HTMLTjaexDataBindingElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-data-binding': JSXElements.TjaexDataBindingAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexDataBindingAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexLoopMapElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexLoopMapElement: {
+    prototype: HTMLTjaexLoopMapElement;
+    new (): HTMLTjaexLoopMapElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-loop-map': HTMLTjaexLoopMapElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-loop-map': HTMLTjaexLoopMapElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-loop-map': JSXElements.TjaexLoopMapAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexLoopMapAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexMainElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexMainElement: {
+    prototype: HTMLTjaexMainElement;
+    new (): HTMLTjaexMainElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-main': HTMLTjaexMainElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-main': HTMLTjaexMainElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-main': JSXElements.TjaexMainAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexMainAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexPropDecoratorElement extends HTMLStencilElement {
+    'favoriteNumber': number;
+    'isSelected': string;
+  }
+  var HTMLTjaexPropDecoratorElement: {
+    prototype: HTMLTjaexPropDecoratorElement;
+    new (): HTMLTjaexPropDecoratorElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-prop-decorator': HTMLTjaexPropDecoratorElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-prop-decorator': HTMLTjaexPropDecoratorElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-prop-decorator': JSXElements.TjaexPropDecoratorAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexPropDecoratorAttributes extends HTMLAttributes {
+      'favoriteNumber'?: number;
+      'isSelected'?: string;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexRenderArrayElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexRenderArrayElement: {
+    prototype: HTMLTjaexRenderArrayElement;
+    new (): HTMLTjaexRenderArrayElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-render-array': HTMLTjaexRenderArrayElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-render-array': HTMLTjaexRenderArrayElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-render-array': JSXElements.TjaexRenderArrayAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexRenderArrayAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexSlotNamedElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexSlotNamedElement: {
+    prototype: HTMLTjaexSlotNamedElement;
+    new (): HTMLTjaexSlotNamedElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-slot-named': HTMLTjaexSlotNamedElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-slot-named': HTMLTjaexSlotNamedElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-slot-named': JSXElements.TjaexSlotNamedAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexSlotNamedAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjaexSlotElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexSlotElement: {
+    prototype: HTMLTjaexSlotElement;
+    new (): HTMLTjaexSlotElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-slot': HTMLTjaexSlotElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-slot': HTMLTjaexSlotElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-slot': JSXElements.TjaexSlotAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexSlotAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }
