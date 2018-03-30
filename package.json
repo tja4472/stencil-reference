@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.1",
   "description": "Stencil App Starter",
+  "repository": "https://github.com/tja4472/stencil-reference",
   "files": [
     "dist/"
   ],
@@ -24,10 +25,7 @@
     "@types/jest": "22.2.2",
     "jest": "22.4.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-app-starter.git"
-  },
+
   "author": "Ionic Team",
   "license": "MIT",
   "bugs": {
