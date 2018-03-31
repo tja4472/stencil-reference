@@ -192,6 +192,33 @@ declare global {
 
 
 declare global {
+  interface HTMLTjaexCustomDomEventElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjaexCustomDomEventElement: {
+    prototype: HTMLTjaexCustomDomEventElement;
+    new (): HTMLTjaexCustomDomEventElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjaex-custom-dom-event': HTMLTjaexCustomDomEventElement;
+  }
+  interface ElementTagNameMap {
+    'tjaex-custom-dom-event': HTMLTjaexCustomDomEventElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjaex-custom-dom-event': JSXElements.TjaexCustomDomEventAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjaexCustomDomEventAttributes extends HTMLAttributes {
+      'onToggle'?: (event: CustomEvent) => void;
+    }
+  }
+}
+
+
+declare global {
   interface HTMLTjaexDataBindingElement extends HTMLStencilElement {
 
   }

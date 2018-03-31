@@ -27,6 +27,7 @@ export class Main {
           <p slot="item-end">I'll be placed after the main content</p>
         </tjaex-slot-named>
         <tjaex-loop-map/>
+        <tjaex-custom-dom-event/>
       </div>
     );
   }
