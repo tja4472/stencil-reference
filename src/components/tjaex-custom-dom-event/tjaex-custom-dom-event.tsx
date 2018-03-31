@@ -2,7 +2,7 @@ import { Component, Event, EventEmitter } from '@stencil/core';
 
 @Component({
   tag: 'tjaex-custom-dom-event',
-  styleUrl: 'tjaex-custom-dom-event.css'
+  styleUrl: 'tjaex-custom-dom-event.css',
 })
 export class CustomDomEvent {
   @Event() toggle: EventEmitter;

@@ -1,8 +1,8 @@
-import { Component } from "@stencil/core";
+import { Component } from '@stencil/core';
 
 @Component({
-  tag: "tjaex-main",
-  styleUrl: "tjaex-main.css"
+  tag: 'tjaex-main',
+  styleUrl: 'tjaex-main.css',
 })
 export class Main {
   render() {
@@ -26,8 +26,8 @@ export class Main {
           <p slot="item-start">I'll be placed before the main content</p>
           <p slot="item-end">I'll be placed after the main content</p>
         </tjaex-slot-named>
-        <tjaex-loop-map/>
-        <tjaex-custom-dom-event/>
+        <tjaex-loop-map />
+        <tjaex-custom-dom-event />
       </div>
     );
   }
