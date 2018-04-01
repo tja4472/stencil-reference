@@ -29,6 +29,7 @@ export class Main {
         <tjaex-loop-map />
         <tjaex-custom-dom-event />
         <tjalfs-calculator />
+        <tjatir-thinking-in-react />
       </div>
     );
   }

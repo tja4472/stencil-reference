@@ -492,4 +492,31 @@ declare global {
   }
 }
 
+
+declare global {
+  interface HTMLTjatirThinkingInReactElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjatirThinkingInReactElement: {
+    prototype: HTMLTjatirThinkingInReactElement;
+    new (): HTMLTjatirThinkingInReactElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjatir-thinking-in-react': HTMLTjatirThinkingInReactElement;
+  }
+  interface ElementTagNameMap {
+    'tjatir-thinking-in-react': HTMLTjatirThinkingInReactElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjatir-thinking-in-react': JSXElements.TjatirThinkingInReactAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjatirThinkingInReactAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }
