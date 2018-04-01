@@ -408,4 +408,88 @@ declare global {
   }
 }
 
+
+declare global {
+  interface HTMLTjalfsBoilingVerdictElement extends HTMLStencilElement {
+    'celsius': number;
+  }
+  var HTMLTjalfsBoilingVerdictElement: {
+    prototype: HTMLTjalfsBoilingVerdictElement;
+    new (): HTMLTjalfsBoilingVerdictElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjalfs-boiling-verdict': HTMLTjalfsBoilingVerdictElement;
+  }
+  interface ElementTagNameMap {
+    'tjalfs-boiling-verdict': HTMLTjalfsBoilingVerdictElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjalfs-boiling-verdict': JSXElements.TjalfsBoilingVerdictAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjalfsBoilingVerdictAttributes extends HTMLAttributes {
+      'celsius'?: number;
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjalfsCalculatorElement extends HTMLStencilElement {
+
+  }
+  var HTMLTjalfsCalculatorElement: {
+    prototype: HTMLTjalfsCalculatorElement;
+    new (): HTMLTjalfsCalculatorElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjalfs-calculator': HTMLTjalfsCalculatorElement;
+  }
+  interface ElementTagNameMap {
+    'tjalfs-calculator': HTMLTjalfsCalculatorElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjalfs-calculator': JSXElements.TjalfsCalculatorAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjalfsCalculatorAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+  interface HTMLTjalfsTemperatureInputElement extends HTMLStencilElement {
+    'scale': string;
+    'temperature': any;
+  }
+  var HTMLTjalfsTemperatureInputElement: {
+    prototype: HTMLTjalfsTemperatureInputElement;
+    new (): HTMLTjalfsTemperatureInputElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjalfs-temperature-input': HTMLTjalfsTemperatureInputElement;
+  }
+  interface ElementTagNameMap {
+    'tjalfs-temperature-input': HTMLTjalfsTemperatureInputElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjalfs-temperature-input': JSXElements.TjalfsTemperatureInputAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjalfsTemperatureInputAttributes extends HTMLAttributes {
+      'onTemperatureChange'?: (event: CustomEvent) => void;
+      'scale'?: string;
+      'temperature'?: any;
+    }
+  }
+}
+
 declare global { namespace JSX { interface StencilJSX {} } }

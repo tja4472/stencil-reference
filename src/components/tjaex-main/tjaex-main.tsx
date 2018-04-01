@@ -28,6 +28,7 @@ export class Main {
         </tjaex-slot-named>
         <tjaex-loop-map />
         <tjaex-custom-dom-event />
+        <tjalfs-calculator />
       </div>
     );
   }
