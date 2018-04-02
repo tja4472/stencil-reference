@@ -15,6 +15,7 @@ export class FilterableProductTable {
   }
 
   handleInStockChange(event: CustomEvent) {
+    console.log('handleInStockChange>', event.detail);
     this.inStockOnly = event.detail;
   }
 
@@ -26,6 +27,11 @@ export class FilterableProductTable {
           inStockOnly={this.inStockOnly}
           onFilterTextChange={(event) => this.handleFilterTextChange(event)}
           onInStockChange={(event) => this.handleInStockChange(event)}
+        />
+        <tjatir-product-table
+          products={this.products}
+          filterText={this.filterText}
+          inStockOnly={this.inStockOnly}
         />
       </div>
     );
