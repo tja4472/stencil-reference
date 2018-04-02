@@ -10,7 +10,7 @@ npm dedupe && npm prune && npm install
 * https://stenciljs.com/
 * https://github.com/ionic-team/stencil
 * https://reactjs.org/docs/lifting-state-up.html See tjalfs-calculator.tsx
-* https://reactjs.org/docs/thinking-in-react.html
+* https://reactjs.org/docs/thinking-in-react.html See tjatir-thinking-in-react.tsx
 
 # Stencil App Starter
 

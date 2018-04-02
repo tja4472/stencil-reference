@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'tjatir-filterable-product-table',
@@ -7,10 +7,26 @@ import { Component, Prop } from '@stencil/core';
 export class FilterableProductTable {
   @Prop() products;
 
+  @State() filterText = '';
+  @State() inStockOnly = false;
+
+  handleFilterTextChange(event: CustomEvent) {
+    this.filterText = event.detail;
+  }
+
+  handleInStockChange(event: CustomEvent) {
+    this.inStockOnly = event.detail;
+  }
+
   render() {
     return (
       <div>
-        <h1>tjatir-filterable-product-table</h1>
+        <tjatir-search-bar
+          filterText={this.filterText}
+          inStockOnly={this.inStockOnly}
+          onFilterTextChange={(event) => this.handleFilterTextChange(event)}
+          onInStockChange={(event) => this.handleInStockChange(event)}
+        />
       </div>
     );
   }

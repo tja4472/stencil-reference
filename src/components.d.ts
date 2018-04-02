@@ -521,6 +521,37 @@ declare global {
 
 
 declare global {
+  interface HTMLTjatirSearchBarElement extends HTMLStencilElement {
+    'filterText': any;
+    'inStockOnly': any;
+  }
+  var HTMLTjatirSearchBarElement: {
+    prototype: HTMLTjatirSearchBarElement;
+    new (): HTMLTjatirSearchBarElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjatir-search-bar': HTMLTjatirSearchBarElement;
+  }
+  interface ElementTagNameMap {
+    'tjatir-search-bar': HTMLTjatirSearchBarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjatir-search-bar': JSXElements.TjatirSearchBarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjatirSearchBarAttributes extends HTMLAttributes {
+      'filterText'?: any;
+      'inStockOnly'?: any;
+      'onFilterTextChange'?: (event: CustomEvent) => void;
+      'onInStockChange'?: (event: CustomEvent) => void;
+    }
+  }
+}
+
+
+declare global {
   interface HTMLTjatirThinkingInReactElement extends HTMLStencilElement {
 
   }
