@@ -521,6 +521,33 @@ declare global {
 
 
 declare global {
+  interface HTMLTjatirProductCategoryRowElement extends HTMLStencilElement {
+    'category': any;
+  }
+  var HTMLTjatirProductCategoryRowElement: {
+    prototype: HTMLTjatirProductCategoryRowElement;
+    new (): HTMLTjatirProductCategoryRowElement;
+  };
+  interface HTMLElementTagNameMap {
+    'tjatir-product-category-row': HTMLTjatirProductCategoryRowElement;
+  }
+  interface ElementTagNameMap {
+    'tjatir-product-category-row': HTMLTjatirProductCategoryRowElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'tjatir-product-category-row': JSXElements.TjatirProductCategoryRowAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface TjatirProductCategoryRowAttributes extends HTMLAttributes {
+      'category'?: any;
+    }
+  }
+}
+
+
+declare global {
   interface HTMLTjatirSearchBarElement extends HTMLStencilElement {
     'filterText': any;
     'inStockOnly': any;
