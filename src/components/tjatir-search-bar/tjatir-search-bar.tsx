@@ -16,7 +16,7 @@ export class SearchBar {
   }
 
   handleInStockChange(event) {
-    this.inStockChange.emit(event.target.value);
+    this.inStockChange.emit(event.target.checked);
   }
 
   render() {
@@ -32,7 +32,7 @@ export class SearchBar {
           <input
             type="checkbox"
             checked={this.inStockOnly}
-            onInput={(event) => this.handleInStockChange(event)}
+            onChange={(event) => this.handleInStockChange(event)}
           />{' '}
           Only show products in stock
         </p>

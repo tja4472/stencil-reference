@@ -15,7 +15,6 @@ export class FilterableProductTable {
   }
 
   handleInStockChange(event: CustomEvent) {
-    console.log('handleInStockChange>', event.detail);
     this.inStockOnly = event.detail;
   }
 
