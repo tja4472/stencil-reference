@@ -5,10 +5,10 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'tjatir-product-row.css',
 })
 export class ProductRow {
-  @Prop() product;
+  @Prop() product: any;
 
   render() {
-    const product = this.product;
+    const product: any = this.product;
     const name = product.stocked ? (
       product.name
     ) : (

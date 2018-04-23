@@ -8,8 +8,8 @@ export class SearchBar {
   @Event() filterTextChange: EventEmitter;
   @Event() inStockChange: EventEmitter;
 
-  @Prop() filterText;
-  @Prop() inStockOnly;
+  @Prop() filterText: string;
+  @Prop() inStockOnly: boolean;
 
   handleFilterTextChange(event) {
     this.filterTextChange.emit(event.target.value);

@@ -5,9 +5,9 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'tjatir-product-table.css',
 })
 export class ProductTable {
-  @Prop() filterText;
-  @Prop() inStockOnly;
-  @Prop() products;
+  @Prop() filterText: string;
+  @Prop() inStockOnly: boolean;
+  @Prop() products: any;
 
   render() {
     const filterText = this.filterText;

@@ -5,10 +5,10 @@ import { Component, Prop, State } from '@stencil/core';
   styleUrl: 'tjatir-filterable-product-table.css',
 })
 export class FilterableProductTable {
-  @Prop() products;
+  @Prop() products: any;
 
-  @State() filterText = '';
-  @State() inStockOnly = false;
+  @State() filterText: string = '';
+  @State() inStockOnly: boolean = false;
 
   handleFilterTextChange(event: CustomEvent) {
     this.filterText = event.detail;

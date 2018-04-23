@@ -13,7 +13,7 @@ export class TemperatureInput {
   @Event() temperatureChange: EventEmitter;
 
   @Prop() scale: string;
-  @Prop() temperature;
+  @Prop() temperature: string;
 
   handleChange(event) {
     this.temperatureChange.emit(event.target.value);

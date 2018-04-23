@@ -30,9 +30,15 @@ import {
 } from '@stencil/router';
 
 declare global {
-  interface HTMLAppHomeElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface AppHome {
+
+    }
   }
+
+  interface HTMLAppHomeElement extends StencilComponents.AppHome, HTMLStencilElement {}
+
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
@@ -57,9 +63,15 @@ declare global {
 
 
 declare global {
-  interface HTMLAppProfileElement extends HTMLStencilElement {
-    'match': MatchResults;
+
+  namespace StencilComponents {
+    interface AppProfile {
+      'match': MatchResults;
+    }
   }
+
+  interface HTMLAppProfileElement extends StencilComponents.AppProfile, HTMLStencilElement {}
+
   var HTMLAppProfileElement: {
     prototype: HTMLAppProfileElement;
     new (): HTMLAppProfileElement;
@@ -84,9 +96,15 @@ declare global {
 
 
 declare global {
-  interface HTMLMyAppElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface MyApp {
+
+    }
   }
+
+  interface HTMLMyAppElement extends StencilComponents.MyApp, HTMLStencilElement {}
+
   var HTMLMyAppElement: {
     prototype: HTMLMyAppElement;
     new (): HTMLMyAppElement;
@@ -111,9 +129,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexCommentElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexComment {
+
+    }
   }
+
+  interface HTMLTjaexCommentElement extends StencilComponents.TjaexComment, HTMLStencilElement {}
+
   var HTMLTjaexCommentElement: {
     prototype: HTMLTjaexCommentElement;
     new (): HTMLTjaexCommentElement;
@@ -138,9 +162,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexConditionalIfElement extends HTMLStencilElement {
-    'name': string;
+
+  namespace StencilComponents {
+    interface TjaexConditionalIf {
+      'name': string;
+    }
   }
+
+  interface HTMLTjaexConditionalIfElement extends StencilComponents.TjaexConditionalIf, HTMLStencilElement {}
+
   var HTMLTjaexConditionalIfElement: {
     prototype: HTMLTjaexConditionalIfElement;
     new (): HTMLTjaexConditionalIfElement;
@@ -165,9 +195,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexConditionalTernaryElement extends HTMLStencilElement {
-    'name': string;
+
+  namespace StencilComponents {
+    interface TjaexConditionalTernary {
+      'name': string;
+    }
   }
+
+  interface HTMLTjaexConditionalTernaryElement extends StencilComponents.TjaexConditionalTernary, HTMLStencilElement {}
+
   var HTMLTjaexConditionalTernaryElement: {
     prototype: HTMLTjaexConditionalTernaryElement;
     new (): HTMLTjaexConditionalTernaryElement;
@@ -192,9 +228,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexCustomDomEventElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexCustomDomEvent {
+
+    }
   }
+
+  interface HTMLTjaexCustomDomEventElement extends StencilComponents.TjaexCustomDomEvent, HTMLStencilElement {}
+
   var HTMLTjaexCustomDomEventElement: {
     prototype: HTMLTjaexCustomDomEventElement;
     new (): HTMLTjaexCustomDomEventElement;
@@ -219,9 +261,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexDataBindingElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexDataBinding {
+
+    }
   }
+
+  interface HTMLTjaexDataBindingElement extends StencilComponents.TjaexDataBinding, HTMLStencilElement {}
+
   var HTMLTjaexDataBindingElement: {
     prototype: HTMLTjaexDataBindingElement;
     new (): HTMLTjaexDataBindingElement;
@@ -246,9 +294,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexLoopMapElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexLoopMap {
+
+    }
   }
+
+  interface HTMLTjaexLoopMapElement extends StencilComponents.TjaexLoopMap, HTMLStencilElement {}
+
   var HTMLTjaexLoopMapElement: {
     prototype: HTMLTjaexLoopMapElement;
     new (): HTMLTjaexLoopMapElement;
@@ -273,9 +327,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexMainElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexMain {
+
+    }
   }
+
+  interface HTMLTjaexMainElement extends StencilComponents.TjaexMain, HTMLStencilElement {}
+
   var HTMLTjaexMainElement: {
     prototype: HTMLTjaexMainElement;
     new (): HTMLTjaexMainElement;
@@ -300,10 +360,16 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexPropDecoratorElement extends HTMLStencilElement {
-    'favoriteNumber': number;
-    'isSelected': string;
+
+  namespace StencilComponents {
+    interface TjaexPropDecorator {
+      'favoriteNumber': number;
+      'isSelected': string;
+    }
   }
+
+  interface HTMLTjaexPropDecoratorElement extends StencilComponents.TjaexPropDecorator, HTMLStencilElement {}
+
   var HTMLTjaexPropDecoratorElement: {
     prototype: HTMLTjaexPropDecoratorElement;
     new (): HTMLTjaexPropDecoratorElement;
@@ -329,9 +395,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexRenderArrayElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexRenderArray {
+
+    }
   }
+
+  interface HTMLTjaexRenderArrayElement extends StencilComponents.TjaexRenderArray, HTMLStencilElement {}
+
   var HTMLTjaexRenderArrayElement: {
     prototype: HTMLTjaexRenderArrayElement;
     new (): HTMLTjaexRenderArrayElement;
@@ -356,9 +428,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexSlotNamedElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexSlotNamed {
+
+    }
   }
+
+  interface HTMLTjaexSlotNamedElement extends StencilComponents.TjaexSlotNamed, HTMLStencilElement {}
+
   var HTMLTjaexSlotNamedElement: {
     prototype: HTMLTjaexSlotNamedElement;
     new (): HTMLTjaexSlotNamedElement;
@@ -383,9 +461,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjaexSlotElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjaexSlot {
+
+    }
   }
+
+  interface HTMLTjaexSlotElement extends StencilComponents.TjaexSlot, HTMLStencilElement {}
+
   var HTMLTjaexSlotElement: {
     prototype: HTMLTjaexSlotElement;
     new (): HTMLTjaexSlotElement;
@@ -410,9 +494,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjalfsBoilingVerdictElement extends HTMLStencilElement {
-    'celsius': number;
+
+  namespace StencilComponents {
+    interface TjalfsBoilingVerdict {
+      'celsius': number;
+    }
   }
+
+  interface HTMLTjalfsBoilingVerdictElement extends StencilComponents.TjalfsBoilingVerdict, HTMLStencilElement {}
+
   var HTMLTjalfsBoilingVerdictElement: {
     prototype: HTMLTjalfsBoilingVerdictElement;
     new (): HTMLTjalfsBoilingVerdictElement;
@@ -437,9 +527,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjalfsCalculatorElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjalfsCalculator {
+
+    }
   }
+
+  interface HTMLTjalfsCalculatorElement extends StencilComponents.TjalfsCalculator, HTMLStencilElement {}
+
   var HTMLTjalfsCalculatorElement: {
     prototype: HTMLTjalfsCalculatorElement;
     new (): HTMLTjalfsCalculatorElement;
@@ -464,10 +560,16 @@ declare global {
 
 
 declare global {
-  interface HTMLTjalfsTemperatureInputElement extends HTMLStencilElement {
-    'scale': string;
-    'temperature': any;
+
+  namespace StencilComponents {
+    interface TjalfsTemperatureInput {
+      'scale': string;
+      'temperature': string;
+    }
   }
+
+  interface HTMLTjalfsTemperatureInputElement extends StencilComponents.TjalfsTemperatureInput, HTMLStencilElement {}
+
   var HTMLTjalfsTemperatureInputElement: {
     prototype: HTMLTjalfsTemperatureInputElement;
     new (): HTMLTjalfsTemperatureInputElement;
@@ -487,16 +589,22 @@ declare global {
     export interface TjalfsTemperatureInputAttributes extends HTMLAttributes {
       'onTemperatureChange'?: (event: CustomEvent) => void;
       'scale'?: string;
-      'temperature'?: any;
+      'temperature'?: string;
     }
   }
 }
 
 
 declare global {
-  interface HTMLTjatirFilterableProductTableElement extends HTMLStencilElement {
-    'products': any;
+
+  namespace StencilComponents {
+    interface TjatirFilterableProductTable {
+      'products': any;
+    }
   }
+
+  interface HTMLTjatirFilterableProductTableElement extends StencilComponents.TjatirFilterableProductTable, HTMLStencilElement {}
+
   var HTMLTjatirFilterableProductTableElement: {
     prototype: HTMLTjatirFilterableProductTableElement;
     new (): HTMLTjatirFilterableProductTableElement;
@@ -521,9 +629,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjatirProductCategoryRowElement extends HTMLStencilElement {
-    'category': any;
+
+  namespace StencilComponents {
+    interface TjatirProductCategoryRow {
+      'category': string;
+    }
   }
+
+  interface HTMLTjatirProductCategoryRowElement extends StencilComponents.TjatirProductCategoryRow, HTMLStencilElement {}
+
   var HTMLTjatirProductCategoryRowElement: {
     prototype: HTMLTjatirProductCategoryRowElement;
     new (): HTMLTjatirProductCategoryRowElement;
@@ -541,16 +655,22 @@ declare global {
   }
   namespace JSXElements {
     export interface TjatirProductCategoryRowAttributes extends HTMLAttributes {
-      'category'?: any;
+      'category'?: string;
     }
   }
 }
 
 
 declare global {
-  interface HTMLTjatirProductRowElement extends HTMLStencilElement {
-    'product': any;
+
+  namespace StencilComponents {
+    interface TjatirProductRow {
+      'product': any;
+    }
   }
+
+  interface HTMLTjatirProductRowElement extends StencilComponents.TjatirProductRow, HTMLStencilElement {}
+
   var HTMLTjatirProductRowElement: {
     prototype: HTMLTjatirProductRowElement;
     new (): HTMLTjatirProductRowElement;
@@ -575,11 +695,17 @@ declare global {
 
 
 declare global {
-  interface HTMLTjatirProductTableElement extends HTMLStencilElement {
-    'filterText': any;
-    'inStockOnly': any;
-    'products': any;
+
+  namespace StencilComponents {
+    interface TjatirProductTable {
+      'filterText': string;
+      'inStockOnly': boolean;
+      'products': any;
+    }
   }
+
+  interface HTMLTjatirProductTableElement extends StencilComponents.TjatirProductTable, HTMLStencilElement {}
+
   var HTMLTjatirProductTableElement: {
     prototype: HTMLTjatirProductTableElement;
     new (): HTMLTjatirProductTableElement;
@@ -597,8 +723,8 @@ declare global {
   }
   namespace JSXElements {
     export interface TjatirProductTableAttributes extends HTMLAttributes {
-      'filterText'?: any;
-      'inStockOnly'?: any;
+      'filterText'?: string;
+      'inStockOnly'?: boolean;
       'products'?: any;
     }
   }
@@ -606,10 +732,16 @@ declare global {
 
 
 declare global {
-  interface HTMLTjatirSearchBarElement extends HTMLStencilElement {
-    'filterText': any;
-    'inStockOnly': any;
+
+  namespace StencilComponents {
+    interface TjatirSearchBar {
+      'filterText': string;
+      'inStockOnly': boolean;
+    }
   }
+
+  interface HTMLTjatirSearchBarElement extends StencilComponents.TjatirSearchBar, HTMLStencilElement {}
+
   var HTMLTjatirSearchBarElement: {
     prototype: HTMLTjatirSearchBarElement;
     new (): HTMLTjatirSearchBarElement;
@@ -627,8 +759,8 @@ declare global {
   }
   namespace JSXElements {
     export interface TjatirSearchBarAttributes extends HTMLAttributes {
-      'filterText'?: any;
-      'inStockOnly'?: any;
+      'filterText'?: string;
+      'inStockOnly'?: boolean;
       'onFilterTextChange'?: (event: CustomEvent) => void;
       'onInStockChange'?: (event: CustomEvent) => void;
     }
@@ -637,9 +769,15 @@ declare global {
 
 
 declare global {
-  interface HTMLTjatirThinkingInReactElement extends HTMLStencilElement {
 
+  namespace StencilComponents {
+    interface TjatirThinkingInReact {
+
+    }
   }
+
+  interface HTMLTjatirThinkingInReactElement extends StencilComponents.TjatirThinkingInReact, HTMLStencilElement {}
+
   var HTMLTjatirThinkingInReactElement: {
     prototype: HTMLTjatirThinkingInReactElement;
     new (): HTMLTjatirThinkingInReactElement;

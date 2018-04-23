@@ -5,7 +5,7 @@ import { Component, Prop } from '@stencil/core';
   styleUrl: 'tjatir-product-category-row.css',
 })
 export class ProductCategoryRow {
-  @Prop() category;
+  @Prop() category: string;
 
   render() {
     const category = this.category;
