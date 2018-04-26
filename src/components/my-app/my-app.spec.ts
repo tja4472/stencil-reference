@@ -1,5 +1,7 @@
-import { render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { MyApp } from './my-app';
+
+// https://github.com/ionic-team/stencil/issues/675
 
 describe('my-app', () => {
   it('should build', () => {
@@ -7,8 +9,12 @@ describe('my-app', () => {
   });
 
   describe('rendering', () => {
+    // let element;
+    let testWindow:TestWindow;
+
     beforeEach(async () => {
-      await render({
+      testWindow = new TestWindow();
+      await testWindow.load({
         components: [MyApp],
         html: '<my-app></my-app>'
       });

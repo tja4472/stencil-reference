@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { ConditionalIf } from './tjaex-conditional-if';
 
 describe('tjaex-conditional-if', () => {
@@ -8,8 +8,11 @@ describe('tjaex-conditional-if', () => {
 
     describe('rendering', () => {
       let element;
+      let testWindow:TestWindow;
+
       beforeEach(async () => {
-        element = await render({
+        testWindow = new TestWindow();
+        element = await testWindow.load({
           components: [ConditionalIf],
           html: '<tjaex-conditional-if></tjaex-conditional-if>'
         });
@@ -17,7 +20,7 @@ describe('tjaex-conditional-if', () => {
 
       it('should work with a name passed', async () => {
           element.name = 'Fred';
-          await flush(element);
+          await testWindow.flush();
 
           const p = element.querySelector('p');
           expect(p.textContent).toEqual('Dynamic data: Fred');          
@@ -25,7 +28,7 @@ describe('tjaex-conditional-if', () => {
 
       it('should work with no name passed', async () => {
         // element.name = 'Fred';
-        await flush(element);
+        await testWindow.flush();
 
         const p = element.querySelector('p');
         expect(p.textContent).toEqual('Dynamic data: No Name');          

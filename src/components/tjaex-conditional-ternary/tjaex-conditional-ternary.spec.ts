@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { ConditionalTernary } from './tjaex-conditional-ternary';
 
 describe('tjaex-conditional-ternary', () => {
@@ -8,8 +8,11 @@ describe('tjaex-conditional-ternary', () => {
 
     describe('rendering', () => {
       let element;
+      let testWindow:TestWindow;
+
       beforeEach(async () => {
-        element = await render({
+        testWindow = new TestWindow();
+        element = await testWindow.load({
           components: [ConditionalTernary],
           html: '<tjaex-conditional-ternary></tjaex-conditional-ternary>'
         });
@@ -17,7 +20,7 @@ describe('tjaex-conditional-ternary', () => {
 
       it('should work with a name passed', async () => {
           element.name = 'Fred';
-          await flush(element);
+          await testWindow.flush();
 
           const p = element.querySelector('p');
           expect(p.textContent).toEqual('Dynamic data(B): Fred');          
@@ -25,7 +28,7 @@ describe('tjaex-conditional-ternary', () => {
 
       it('should work with no name passed', async () => {
         // element.name = 'Fred';
-        await flush(element);
+        await testWindow.flush();
 
         const p = element.querySelector('p');
         expect(p.textContent).toEqual('Dynamic data(B): No Name');          

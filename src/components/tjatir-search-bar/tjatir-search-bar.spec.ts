@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { SearchBar } from './tjatir-search-bar';
 
 describe('tjatir-search-bar', () => {
@@ -8,8 +8,11 @@ describe('tjatir-search-bar', () => {
 
     describe('rendering', () => {
       let element;
+      let testWindow:TestWindow;
+
       beforeEach(async () => {
-        element = await render({
+        testWindow = new TestWindow();        
+        element = await testWindow.load({
           components: [SearchBar],
           html: '<tjatir-search-bar></tjatir-search-bar>'
         });
@@ -22,7 +25,7 @@ describe('tjatir-search-bar', () => {
       */
       it('ddddddddd', async () => {
         element.inStockOnly = false;
-        await flush(element);
+        await testWindow.flush();
 
 
         console.log('innerHTML>', element.innerHTML);
@@ -36,7 +39,7 @@ describe('tjatir-search-bar', () => {
         p.click();
         // const spy = jest.spyOn(element.inStockChange, 'emit');
 
-        await flush(element);
+        await testWindow.flush();
 
         const q = element.querySelector('input[type="checkbox"]');
         expect(q.checked).toEqual(true);    
