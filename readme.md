@@ -1,3 +1,32 @@
+# Unit test broken when importing external stencil component
+https://github.com/ionic-team/stencil/issues/713
+```powershell
+npm test my-app.spec
+```
+```powershell
+> jest --no-cache "my-app.spec"
+
+ FAIL  src\components\my-app\my-app.spec.ts
+  ● Test suite failed to run
+
+    TypeError: Cannot read property 'getAttribute' of undefined
+
+       7 | })
+       8 | export class MyApp {
+    >  9 |   render() {
+      10 |     return (
+      11 |       <div>
+      12 |         <header>
+
+      at node_modules/@stencil/router/dist/stencilrouter.js:2:659
+      at Object.<anonymous> (node_modules/@stencil/router/dist/stencilrouter.js:2:1412)
+      at Object.<anonymous> (src/components/my-app/my-app.tsx:9:16)
+      at Object.<anonymous> (src/components/my-app/my-app.spec.ts:40:16)
+
+Test Suites: 1 failed, 1 total
+```
+
+
 Cannot find module 'request' #5352
 https://github.com/facebook/jest/issues/5352
 
