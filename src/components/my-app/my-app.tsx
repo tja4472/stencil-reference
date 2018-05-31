@@ -1,5 +1,5 @@
 import { Component } from '@stencil/core';
-import { RouterSwitch } from '@stencil/router';
+// import { ste } from '@stencil/router';
 
 @Component({
   tag: 'my-app',
@@ -15,10 +15,10 @@ export class MyApp {
 
         <main>
           <stencil-router>
-            <RouterSwitch>
+            <stencil-route-switch >
               <stencil-route url="/" component="app-home" exact={true} />
               <stencil-route url="/profile/:name" component="app-profile" />
-            </RouterSwitch>
+            </stencil-route-switch >
           </stencil-router>
         </main>
       </div>

@@ -1,3 +1,25 @@
+# jest 23.1.0 - Unexpected response from worker
+```powershell
+PS C:\VSCode\2018\git-hub-tim\stencil-reference> npm test
+
+> stencil-reference@0.0.1 test C:\VSCode\2018\git-hub-tim\stencil-reference
+> jest --no-cache
+
+ PASS  src/components/tjaex-conditional-if/tjaex-conditional-if.spec.ts (7.526s)
+ PASS  src/components/tjaex-conditional-ternary/tjaex-conditional-ternary.spec.ts (7.533s)
+
+ RUNS  src/components/tjatir-search-bar/tjatir-search-bar.spec.ts
+ RUNS  src/components/tjaex-custom-dom-event/tjaex-custom-dom-event.spec.ts
+ RUNS  src/components/app-profile/app-profile.spec.ts
+
+Test Suites: 2 passed, 2 of 23 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        9sC:\VSCode\2018\git-hub-tim\stencil-reference\node_modules\jest-worker\build\worker.js:200
+        throw new TypeError('Unexpected response from worker: ' + response[0]);
+```        
+
+
 # Unit test broken when importing external stencil component
 https://github.com/ionic-team/stencil/issues/713
 ```powershell
